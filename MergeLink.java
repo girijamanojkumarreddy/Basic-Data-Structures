@@ -8,13 +8,13 @@ class Node {
     this.next = null;
   }
 }
-
+//Creating a linkedlist.
 class Linkedlist {
   Node head;
   public  Linkedlist() {
     this.head = null;
   }
-
+//adding a node.
   public void addNode(int data) {
     Node temp;
     Node newNode = new Node(data);
@@ -26,7 +26,7 @@ class Linkedlist {
       temp.next =  newNode;
     }
   }
-
+//Keeping a count.
   public void Count() {
     Node temp;
     int count = 0;
@@ -37,7 +37,7 @@ class Linkedlist {
     }
     System.out.println(count);
   }
-
+//Printing the count.
   public void print() {
     Node temp;
     for(temp = head; temp != null; temp = temp.next) {
@@ -45,7 +45,7 @@ class Linkedlist {
     }
   }
 }
-
+//Make a Merge.
 public class MergeLink {
   public void merge(Linkedlist L, Linkedlist M) {
     Node temp;
